@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0; list-style: none; font-family: "맑은 고딕"; color: #333;}
+a {text-decoration: none; display: block;}
+.clear::after, .clear::before {content: ''; display: block; clear: both;}
+body {overflow-x: hidden;}
+
+/*PC영역*/
+
+#header {width: 100%; height: 100px; position: fixed; top: 0; z-index: 1;}
+.logo {width: 300px; height: 40px; margin-left: 30px;margin-top: 10px;}
+
+#fullpage {width: 100%; height: 100vh;}
+.section {width: 100%; height: 100%;}
+.con1 { background-color: #FFFFF5;}
+.con2 { background-color: #FFFFF5;}
+.con3 { background-color: #FFFFF5;}
+.con4 { background-color: #FFFFF5;}
+
+.biglogo { position: relative; z-index: 1;}
+.con1 a:nth-child(2) {width: 650px; height: 580px; position: absolute; bottom: 20px; right: 100px;}
+
+.earbox {width: 900px; height: 500px; border: 3px solid #DB8D86; float: right; margin-right: 100px; margin-top: 10%;}
+.eartext {width: 400px; height: 88px; float: left;}
+.eartext a img {margin-top: 180px; margin-left: 270px;}
+.ear {}
+.ear li {}
+.ear li img {float: left; margin-top: 40%; margin-left: 5%;}
+
+.tailbox {width: 900px; height: 500px; border: 3px solid #DB8D86; float: left; margin-left: 100px; margin-top: 10%;}
+.tailtext {width: 400px; height: 88px; float: left;}
+.tailtext a img {margin-top: 180px; margin-left: 100px;}
+.tail {}
+.tail li {}
+.tail li img {float: left; margin-top: 30%;}
+
+.playbox {width: 900px; height: 500px; border: 3px solid #DB8D86; float: right; margin-right: 100px; margin-top: 10%;}
+.playtext {width: 400px; height: 88px; float: left;}
+.playtext a img {margin-top: 180px; margin-left: 100px;}
+.play {}
+.play li {}
+.play li img {float: left; margin-top: 30%; margin-left: 15%;}
+
+
+.cat1 {float: left; margin-left: 100px;}
+
+
+.cat2 {float: right; margin-right: 100px;}
+
+
+.cat3 {float: left; margin-left: 100px; margin-top: 16%;}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {background: #db8d86;}
+
+.slick-arrow {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+}
+.slick-prev {left: 0px; top: 250px; z-index: 1; background-image: url(../img/prev_h1.png)}
+.slick-next {right: 0px; top: 250px; background-image: url(../img/prev_h.png)}
+
+.slick-dots {display: none}
+.slick-dots li {display: none;}
+
+/* 1024이하 패드*/
+@media screen and (max-width:1024px){
+  
+}
+
+@media screen and (max-width:767px){
+    #header {height: 80px;}
+    .logo>a>img {width: 200px; height: 27px; float: left;}
+    .biglogo>img {width: 400px; height: 152px; }
+    .foot>img {width: 300px; height: 268px; float: right; margin-top: 200px;}
+    .slick-arrow {display: none !important;}
+    .cat1>img {width: 250px; height: 410px; margin-left: 25px;}
+    .eartext>a>img {width: 200px; height: 44px;}
+    .eartext {position: absolute; top: 355px; right: 345px;}
+    .earbox {width: 450px; height: 250px; border: 2px solid #DB8D86; float: left; margin-left: 5%;}
+    .ear li>img {width: 150px; height: 124px;}
+    .ear li {}
+    .cat2>img {width: 314px; height: 410px;}
+    .tailtext>a>img {width: 230px; height: 44px;}
+    .tailtext {position: absolute; top: 355px; right: 0px;}
+    .tailbox {width: 450px; height: 250px; border: 2px solid #DB8D86; float: left; margin-left: 5%;}
+    .tail li>img {width: 130px; height: 138px; margin-left: 5%;}
+    .cat3>img {width: 400px; height: 377px; position: absolute; top: 130px; left: 50px;}
+    .playtext>a>img {width: 380px; height: 44px;}
+    .playtext {position: absolute; top: 370px; right: 175px;}
+    .playbox {width: 450px; height: 250px; border: 2px solid #DB8D86; float: left; margin-left: 5%; position: absolute; top: 550px;}
+    .play li>img {width: 100px; height: 143px;}
+    
+    .slick-dots {margin-left: 45%; margin-top: 30px; display: block;}
+    .slick-dots li {float: left; margin-right: 10px; display: block;}
+    .slick-dots li button {width: 10px; height: 10px; border-radius: 5px; background-color: #bbb9b9; border: none; text-indent: -9999px; cursor: pointer;}
+    .slick-dots .slick-active button {background-color: #ffa097;}
+
+}
+
+    /* 마우스 커서 변경 */
+    body {
+      cursor: url(../img/mouse.png), auto;
+      position:absolute;
+      width:100%;
+      height:100%;
+      overflow: hidden;
+      text-align:center;
+      color: linear-gradient(
+        to right,#fbcac9, #8ca6ce
+      );
+}
+
+
+
+
+
+
